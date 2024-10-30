@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(bg-intro-desktop.png);
+  padding: 0 5%;
+}
+
+.information {
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.information h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.information p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.adding {
+  display: grid;
+  gap: 1rem;
+}
+
+button {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button span {
+  font-weight: 700;
+}
+
+.box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box button {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 232px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.box input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-size: 1rem;
+}
+
+.box input::placeholder {
+  color: hsl(249, 10%, 26%);
+}
+
+.box p {
+  font-size: 0.85rem;
+  text-align: center;
+  color: hsl(249, 10%, 26%);
+}
+
+.box p span {
+  color: hsl(0, 100%, 74%);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    height: auto;
+    background-image: url(bg-intro-mobile.png);
+  }
+
+  .information {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .information h2 {
+    font-size: 1.75rem;
+  }
+
+  .information p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .adding button {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .box {
+    padding: 1.5rem;
+  }
+
+  .box button {
+    padding: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .box input {
+    padding: 0.9rem;
+  }
+
+  .box p {
+    font-size: 0.75rem;
+  }
+}
